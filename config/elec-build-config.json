@@ -1,0 +1,36 @@
+{
+    "productName": "DemoApp",
+    "appId": "com.electron-react-demo.app",
+    "asar": true,
+    "npmRebuild": true,
+    "electronDownload": {
+      "cache": ".electron"
+    },
+    "extraMetadata": {
+      "main": "build/electron.js"
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis-web",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsisWeb": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": true,
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": true
+    },
+    "linux": {
+      "target": ["deb", "AppImage"],
+      "category": "Development"
+    }
+  }
+  
