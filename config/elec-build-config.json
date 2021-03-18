@@ -24,8 +24,8 @@
     "mac": {
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
-      "target": ["dmg", "zip"],
-      "type": "distribution"
+      "artifactName":"${appName}-${version}.${ext}",
+      "target": ["dmg", "zip"]
     },
     "nsisWeb": {
       "allowToChangeInstallationDirectory": true,

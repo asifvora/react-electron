@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author":"Asif Vora",
+  "appName": "electron-react-demo",
   "description":"Demo app for react and electron",
   "homepage": "./",
   "main": "public/electron.js",
@@ -29,10 +30,11 @@
     "eject": "react-scripts eject",
     "clean": "rimraf dist build",
     "clean:all": "rimraf dist build .electron",
-    "preelectron-pack": "npm run clean && npm run build",
+    "pre-electron-pack": "npm run clean && npm run build",
     "dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron-pack:win": "npm run preelectron-pack && electron-builder build -w --config config/elec-build-config.json",
-    "electron-pack:mac": "npm run preelectron-pack && electron-builder build -m --config config/elec-build-config.json"
+    "electron-pack:win": "npm run pre-electron-pack && electron-builder build -w --config config/elec-build-config.json",
+    "electron-pack:mac": "npm run pre-electron-pack && electron-builder build -m --config config/elec-build-config.json",
+    "electron-pack:linux": "npm run pre-electron-pack && electron-builder build -l --config config/elec-build-config.json"
   },
   "eslintConfig": {
     "extends": [
