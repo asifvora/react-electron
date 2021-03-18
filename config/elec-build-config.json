@@ -21,6 +21,12 @@
         }
       ]
     },
+    "mac": {
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "target": ["dmg", "zip"],
+      "type": "distribution"
+    },
     "nsisWeb": {
       "allowToChangeInstallationDirectory": true,
       "oneClick": false,
