@@ -2,7 +2,10 @@
   "name": "electron-react-demo",
   "version": "0.1.0",
   "private": true,
-  "author":"Asif Vora",
+  "author": {
+    "name": "Asif Vora",
+    "email": "asifvora0@gmail.com"
+  },
   "appName": "electron-react-demo",
   "description":"Demo app for react and electron",
   "homepage": "./",
